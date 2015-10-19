@@ -35,7 +35,7 @@ for nIter = 1:n
     thetaTemp(nIter) = theta(nIter) - alpha * (1 / m) * sum;
 end
 
-theta = thetaTemp
+theta = thetaTemp;
 
     % ============================================================
 

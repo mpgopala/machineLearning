@@ -15,11 +15,9 @@ function plotData(x, y)
 %       markers larger by using plot(..., 'rx', 'MarkerSize', 10);
 
 figure; % open a new figure window
-p = plot(x, y);
+p = plot(x, y, '*r');
 xlabel('population')
 ylabel('profit')
-p.Marker = '*';
-p.LineStyle = 'none';
 
 
 

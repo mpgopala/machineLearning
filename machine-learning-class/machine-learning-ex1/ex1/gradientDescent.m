@@ -19,7 +19,7 @@ for iter = 1:num_iters
 
 thetaTemp = theta;
 
-n = length(theta)
+n = length(theta);
 
 h = X * theta;
 hMinusY = h - y;

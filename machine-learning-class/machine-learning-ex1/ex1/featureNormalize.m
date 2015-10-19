@@ -27,12 +27,15 @@ sigma = zeros(1, size(X, 2));
 %       
 
 
+numFeatures = size(X, 2);
 
+mu = mean(X);
+sigma = std(X);
 
-
-
-
-
+for i = 1:numFeatures
+  X_norm(:,i) = (X_norm(:,i) - mu(i)) / sigma(i);
+  
+end
 
 % ============================================================
 
